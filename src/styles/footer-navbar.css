@@ -1,0 +1,22 @@
+.footer__navbar {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 -5px 10px 5px var(--dark-navbar-transparent);
+}
+
+.navbar__text {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.navbar__ref {
+  color: var(--mid-tone-orange);
+  text-decoration: none;
+}
+
+.navbar__ref:hover {
+  text-decoration: underline;
+}

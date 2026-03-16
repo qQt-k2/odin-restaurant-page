@@ -1,0 +1,22 @@
+.about__block {
+  margin-top: 50px;
+  display: grid;
+  place-items: center;
+  gap: 25px;
+}
+
+.map__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.map__header {
+ font-size: 2rem;
+}
+
+.map__ref {
+  border-radius: 25px;
+}

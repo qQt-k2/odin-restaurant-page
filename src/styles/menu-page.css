@@ -1,0 +1,73 @@
+:root {
+  --menu-header-text: rgb(71, 51, 9);
+  
+  --card-background: rgb(255, 231, 182);
+  --card-dark-color: rgb(98, 70, 14);
+  --card-mid-color: rgb(144, 105, 28);
+
+  --card-button-background: rgb(255, 198, 85);
+  --card-button-hover: rgba(255, 208, 55, 0.9);
+  --card-button-shadow: rgb(212, 182, 124);
+}
+
+.menu__block {
+  display: grid;
+  place-items: center;
+  margin-top: 25px;
+  gap: 25px;
+}
+
+.menu__header {
+  font-size: 2rem;
+  letter-spacing: 5px;
+  color: var(--menu-header-text);
+}
+
+.menu__cards--holder {
+  display: grid;
+  grid-template: 
+    repeat(1, minmax(250px, 1fr)) / 
+    repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.menu__card {
+  padding: 40px 20px;
+  border-radius: 20px;
+  background: var(--card-background);
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card__header {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--card-dark-color);
+}
+
+.card__image {
+  align-self: center;
+}
+
+.card__description {
+  color: var(--card-mid-color);
+  text-align: center;
+}
+
+.card__button {
+  background: var(--card-button-background);
+  color: var(--card-dark-color);
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  box-shadow: 0 5px 0px 0px var(--card-button-shadow);
+  transition: background 0.2s ease;
+}
+
+.card__button:hover {
+  background: var(--card-button-hover);
+}

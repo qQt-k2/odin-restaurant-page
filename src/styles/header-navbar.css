@@ -1,0 +1,57 @@
+.header__navbar,
+.navbar__logo--holder,
+.navbar__buttons--holder {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__navbar {
+  padding: 10px;
+  width: 100vw;
+  position: fixed;
+  justify-content: space-around;
+
+  background: var(--navbar-yellow);
+  box-shadow: 0 5px 10px 5px var(--dark-navbar-transparent);
+}
+
+
+
+.navbar__logo {
+  font-family: "Iosevka Charon", monospace;
+  transition: color 0.1s ease;
+  cursor: default;
+}
+
+.navbar__logo:hover {
+  color:#ce8936;
+}
+
+
+
+.navbar__button {
+  background: none;
+  border: none;
+
+  font-weight: 500;
+  font-size: 1.25rem;
+
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar__button::before {
+  content: "";
+  background: #ce8936;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  transition: width 0.1s ease;
+}
+
+.navbar__button:hover::before {
+  width: 100%;
+}
